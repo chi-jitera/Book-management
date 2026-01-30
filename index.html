@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-[#0b0b0b] flex items-center justify-center p-6">
+    <!-- Outer dark frame -->
+    <div class="w-full max-w-[1180px] h-[720px] bg-[#121212] rounded-sm flex items-center justify-center p-7">
+      <!-- Inner blue canvas -->
+      <div class="w-full h-full bg-[#2249B8] rounded-sm relative">
+        <!-- Centered login form -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-[320px] flex flex-col items-center">
+            <!-- Username -->
+            <div class="w-[280px] h-12 border border-white/65 rounded-md flex items-center px-4 gap-3">
+              <!-- user icon -->
+              <svg
+                class="w-5 h-5 text-white/85"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M4.5 20c1.7-3.6 5-5 7.5-5s5.8 1.4 7.5 5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="USERNAME"
+                class="w-full bg-transparent outline-none text-white/90 placeholder:text-white/70 tracking-widest text-xs"
+              />
+            </div>
+
+            <div class="h-4"></div>
+
+            <!-- Password -->
+            <div class="w-[280px] h-12 border border-white/65 rounded-md flex items-center px-4 gap-3">
+              <!-- lock icon -->
+              <svg
+                class="w-5 h-5 text-white/85"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 11V8.5A5 5 0 0 1 12 3a5 5 0 0 1 5 5.5V11"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6.5 11h11A2.5 2.5 0 0 1 20 13.5v5A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5v-5A2.5 2.5 0 0 1 6.5 11Z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+              </svg>
+              <input
+                type="password"
+                placeholder="PASSWORD"
+                class="w-full bg-transparent outline-none text-white/90 placeholder:text-white/70 tracking-widest text-xs"
+              />
+            </div>
+
+            <div class="h-8"></div>
+
+            <!-- Login button -->
+            <button
+              class="w-[280px] h-12 bg-white text-[#2249B8] font-semibold tracking-widest text-sm rounded shadow-[0_5px_12px_rgba(0,0,0,0.35)] border border-black/5"
+            >
+              LOGIN
+            </button>
+
+            <div class="h-3"></div>
+
+            <!-- Forgot password -->
+            <a href="#" class="text-white/85 text-sm hover:text-white transition">
+              Forgot password?
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
